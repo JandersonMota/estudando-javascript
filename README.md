@@ -1,4 +1,5 @@
 # Estudando JavaScript
+Aqui abordaremos alguns tópicos e principalmente algumas diferenças das outras linguagens. O meu conhecimento é da linguagem C e Java, então, o que tiver faltando sobre o determinado assunto, significa que é o mesmo para as linguagens acima.
 
 ## Caracteriscas
 - Todas as instruções de código devem terminar com um ponto-e-vírgula `;`.
@@ -82,6 +83,22 @@ guessField.focus();
 
 Esta linha usa o método `focus()` para colocar automaticamente o cursor de texto no campo de entrada `<input>`. Isso significa que, ao executar essa linha de código, o usuário pode começar a digitar imediatamente, sem precisar clicar no campo do formulário. Embora seja uma pequena adição, ela melhora a usabilidade.
 
+### Matemática
+
+Para arredondar seu número para um número fixo de casas decimais, use o método `toFixed()`.
+```javascript
+const lotsOfDecimal = 1.766584958675746364;
+lotsOfDecimal;
+const twoDecimalPlaces = lotsOfDecimal.toFixed(2);
+twoDecimalPlaces;
+```
+
+Às vezes, você pode acabar com um número armazenado como um tipo de cadeia de caracteres, o que dificulta a realização de cálculos com ele. Isso geralmente acontece quando os dados são inseridos em uma entrada de formulário e o tipo de entrada é texto.
+
+```
+let myNumber = "74";
+myNumber = Number(myNumber) + 3;
+```
 ## Objetos
 
 Criando objetos.
