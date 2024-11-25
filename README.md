@@ -1,7 +1,20 @@
 # Estudando JavaScript
 
+## Caracteriscas
+- Todas as instruções de código devem terminar com um ponto-e-vírgula `;`.
+- As variáveis diferenciam maiúsculas de minúsculas.
+
+## Tipos de variáveis
+JavaScript é uma "linguagem tipada dinamicamente", o que significa que, ao contrário de algumas outras linguagens, você não precisa especificar qual tipo de dados uma variável conterá (números, strings, arrays, etc.).
+
+```javascript
+let myNameArray = ["Chris", "Bob", "Jim"];
+let myNumberArray = [10, 15, 40];
+```
+
 ## Funções
 Definimos uma função usando a palavra-chave `function`, seguida por um nome `checkGuess`, com parênteses colocados depois dela.
+
 ```javascript
 function checkGuess() {
   // AQUI VAI O CÓDIGO
@@ -68,3 +81,21 @@ guessField.focus();
 ```
 
 Esta linha usa o método `focus()` para colocar automaticamente o cursor de texto no campo de entrada `<input>`. Isso significa que, ao executar essa linha de código, o usuário pode começar a digitar imediatamente, sem precisar clicar no campo do formulário. Embora seja uma pequena adição, ela melhora a usabilidade.
+
+## Objetos
+
+Criando objetos.
+
+```javascript
+let dog = { name: "Spot", breed: "Dalmatian" };
+```
+
+Para recuperar as informações armazenadas no objeto.
+
+```javascript
+dog.name;
+dog.breed;
+// Ou
+dog["name"];
+dog["breed"];
+```
