@@ -1,5 +1,5 @@
 # Estudando JavaScript
-Aqui abordaremos alguns tópicos e principalmente algumas diferenças das outras linguagens. O meu conhecimento é da linguagem C e Java, então, o que tiver faltando sobre o determinado assunto, significa que é o mesmo para as linguagens acima.
+Aqui, vamos explorar alguns tópicos e destacar principalmente as diferenças em relação a outras linguagens. Meu conhecimento é focado em C e Java, então, se eu não mencionar algo sobre o assunto, pode assumir que é igual ao que acontece nessas linguagens.
 
 ## Caracteriscas
 - Todas as instruções de código devem terminar com um ponto-e-vírgula `;`.
