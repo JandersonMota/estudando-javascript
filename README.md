@@ -28,6 +28,55 @@ Código JavaScript sendo usado em um arquivo externo.
 <script src="nomeDoArquivo.js"></script>
 ```
 
+## Alguns comandos
+- Exibir a mensagem dentro do HTML: `document.write("ESCREVA AQUI");`
+  - Permite escrever texto e HTML em um documento.
+- Exibir uma caixa de mensagem: `alert("ESCREVA AQUI");`.
+  - Usado para mostrar uma caixa de alerta (dialogo) e um botão de OK.
+- Exibir uma caixa de confirmação: `confirm("ESCREVA AQUI");`
+  - Usado para mostrar uma caixa de confirmação, com uma mensagem especifica, e botões OK e Cancelar.
+  - Retorna *True* se o usuário clicar em OK, e *False* se clicar em Cancelar.
+- Solicitar informação: `prompt("arg01","[arg02]");`
+  - Caixa de diálogo para entrada de dados.
+  - **arg01** é uma mensagem de instrução direcionada ao usuário.
+  - **arg02** é um valor padrão, geralmente usado para fornecer uma dica ao usuário. É opcional.
+
+```javascript
+// Exmplo com document.write("ESCREVA AQUI");
+var a = prompt("Digite seu nome: ","Nome");
+
+document.write("Bom dia, " + a + "<br />");
+document.write("<p>Vamos estudar <strong>JavaScript</strong></p>");
+```
+
+```javascript
+// Exmplo com alert("ESCREVA AQUI");
+alert("Bom dia!");
+alert("Vamos estudar a linguagem \nJavaScript hoje!");
+```
+
+```javascript
+// Exemplo com confirm("ESCREVA AQUI");
+var mensagem;
+var retorno = confirm("Clique em um dos botões!");
+
+if(retorno == true) {
+  mensagem = "Operação confirmada";
+} else {
+  mensagem = "Você cancelou a operação";
+}
+
+document.write(mensagem);
+```
+
+```javascript
+// Exemplo com prompt("arg01","[arg02]");
+var a = prompt("Digite seu nome: ","Nome");
+var b = prompt("Digite seu sobrenome:");
+
+document.write("Bom dia, " + a + " " + b + "<br />");
+```
+
 ## Tipos de variáveis
 JavaScript é uma "linguagem tipada dinamicamente", o que significa que, ao contrário de algumas outras linguagens, você não precisa especificar qual tipo de dados uma variável conterá (números, strings, arrays, etc.).
 
@@ -65,10 +114,6 @@ document.write("e é " + typeof e + "<br/>"); // e é undefined
 let myNameArray = ["Chris", "Bob", "Jim"];
 let myNumberArray = [10, 15, 40];
 ```
-
-## Alguns comandos
-- Exibir a mensagem dentro do HTML: `document.write("ESCREVA AQUI");`
-- Exibir uma caixa de mensagem: `alert("ESCREVA AQUI");`
 
 ## Funções
 Definimos uma função usando a palavra-chave `function`, seguida por um nome `checkGuess`, com parênteses colocados depois dela.
