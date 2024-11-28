@@ -2,16 +2,73 @@
 Aqui, vamos explorar alguns tópicos e destacar principalmente as diferenças em relação a outras linguagens. Meu conhecimento é focado em C e Java, então, se eu não mencionar algo sobre o assunto, pode assumir que é igual ao que acontece nessas linguagens.
 
 ## Caracteriscas
+- É uma linguagem interpretada.
+- É uma linguagem não tipada, ou seja, não se especifica os tipos de dados representados.
+- Os tipos de dados são dinâmicos, o que significa que a mesma variável pode ser usada com tipos diferentes.
+- As variáveis são case-sensitive, ou seja, diferenciam maiúsculas de minúsculas.
 - Todas as instruções de código devem terminar com um ponto-e-vírgula `;`.
-- As variáveis diferenciam maiúsculas de minúsculas.
+
+## Marcador <script>
+O marcador `<script>` possui alguns atributos importantes, como:
+- **type**: informa ao navegador o tipo de texto contido no elemento, ou seja, o tipo de script.
+- **src**: especifica o local do arquivo .js, caso seja usado um arquivo externo contendo o código JavaScript.
+Obs.: não precisa informar `type`, já que os navegadores reconhecem apenas com `<script>`.
+
+Código JavaScript interno na página HTML.
+```javascript
+<script type="text/javascript">
+  // AQUI VAI O CÓDIGO
+</script>
+```
+
+Código JavaScript sendo usado em um arquivo externo.
+```javascript
+<script type="text/javascript" src="nomeDoArquivo.js"></script>
+// Ou
+<script src="nomeDoArquivo.js"></script>
+```
 
 ## Tipos de variáveis
 JavaScript é uma "linguagem tipada dinamicamente", o que significa que, ao contrário de algumas outras linguagens, você não precisa especificar qual tipo de dados uma variável conterá (números, strings, arrays, etc.).
+
+Os tipos de dados são:
+- Número inteiro
+- Número de ponto flutuante
+- String: devem ser representados entre aspas simples ou duplas.
+- Booleano
+- Array
+- Objeto
+
+Tipos de variáveis:
+- `var`
+
+```javascript
+var nome;
+var a=20, b=40.65, codigo="S43X";
+var estado=true;
+```
+
+`typeof`: informa o tipo da variável.
+
+```javascript
+var a=10, b=4.50, c="Água", d=true, e;
+
+document.write("a é " + typeof a + "<br/>"); // a é number
+document.write("b é " + typeof b + "<br/>"); // b é number
+document.write("c é " + typeof c + "<br/>"); // c é string
+document.write("d é " + typeof d + "<br/>"); // d é boolean
+document.write("e é " + typeof e + "<br/>"); // e é undefined
+```
+
 
 ```javascript
 let myNameArray = ["Chris", "Bob", "Jim"];
 let myNumberArray = [10, 15, 40];
 ```
+
+## Alguns comandos
+- Exibir a mensagem dentro do HTML: `document.write("ESCREVA AQUI");`
+- Exibir uma caixa de mensagem: `alert("ESCREVA AQUI");`
 
 ## Funções
 Definimos uma função usando a palavra-chave `function`, seguida por um nome `checkGuess`, com parênteses colocados depois dela.
@@ -95,7 +152,7 @@ twoDecimalPlaces;
 
 Às vezes, você pode acabar com um número armazenado como um tipo de cadeia de caracteres, o que dificulta a realização de cálculos com ele. Isso geralmente acontece quando os dados são inseridos em uma entrada de formulário e o tipo de entrada é texto.
 
-```
+```javascript
 let myNumber = "74";
 myNumber = Number(myNumber) + 3;
 ```
